@@ -30,7 +30,7 @@ class PostToTimelineTest extends TestCase
 
          $post = Post::first();
 
-        $this->assertCount(1, Post::all());
+         $this->assertCount(1, Post::all());
          $this->assertEquals($user->id, $post->user_id);
          $this->assertEquals('Testing Body', $post->body);
          $response->assertStatus(201)
@@ -39,6 +39,13 @@ class PostToTimelineTest extends TestCase
                         'type' => 'posts',
                         'post_id' => $post->id,
                         'attributes' => [
+                            'posted_by' => [
+                                'data' => [
+                                    'attributes' => [
+                                        'name' => $user->name,
+                                    ]
+                                ]
+                            ],
                             'body' => 'Testing Body',
                         ]
                     ],
