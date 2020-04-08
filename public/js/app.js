@@ -2133,6 +2133,13 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/Post */ "./resources/js/components/Post.vue");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -2154,6 +2161,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Show",
@@ -2162,22 +2173,14 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      user: null,
       posts: null,
-      userLoading: true,
-      postLoading: true
+      postLoadiing: true
     };
   },
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('/api/users/' + this.$route.params.userId).then(function (res) {
-      _this.user = res.data;
-    })["catch"](function (error) {
-      console.log('Unable to fetch the user from the server');
-    })["finally"](function () {
-      _this.userLoading = false;
-    });
+    this.$store.dispatch('fetchUser', this.$route.params.userId);
     axios.get('/api/users/' + this.$route.params.userId + '/posts').then(function (res) {
       _this.posts = res.data;
     })["catch"](function (error) {
@@ -2185,7 +2188,10 @@ __webpack_require__.r(__webpack_exports__);
     })["finally"](function () {
       _this.postLoading = false;
     });
-  }
+  },
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapGetters"])({
+    user: 'user'
+  }))
 });
 
 /***/ }),
@@ -19826,7 +19832,7 @@ var render = function() {
           _c(
             "div",
             { staticClass: "overflow-x-hidden w-2/3" },
-            [_c("router-view")],
+            [_c("router-view", { key: _vm.$route.fullPath })],
             1
           )
         ],
@@ -20432,7 +20438,7 @@ var render = function() {
             staticClass: "object-cover w-full",
             attrs: {
               src:
-                "https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg",
+                "https://previews.123rf.com/images/solerf/solerf1311/solerf131100130/23650708-green-planet-in-your-heart-hands-usa-environment-concept.jpg",
               alt: ""
             }
           })
@@ -20459,6 +20465,19 @@ var render = function() {
             _vm._v(" "),
             _c("p", { staticClass: "text-2xl text-gray-100 ml-4 " }, [
               _vm._v(_vm._s(_vm.user.data.attributes.name))
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "absolute flex items-center buttom-0 right-0 mb-4 mr-12 z-20"
+          },
+          [
+            _c("button", { staticClass: "py-1 px-3 bg-red-400 rounded" }, [
+              _vm._v("Add Friend")
             ])
           ]
         )
@@ -37050,6 +37069,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var _modules_user__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/user */ "./resources/js/store/modules/user.js");
 /* harmony import */ var _modules_title__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/title */ "./resources/js/store/modules/title.js");
+/* harmony import */ var _modules_profile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/profile */ "./resources/js/store/modules/profile.js");
+
 
 
 
@@ -37058,9 +37079,58 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__
 /* harmony default export */ __webpack_exports__["default"] = (new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
   modules: {
     User: _modules_user__WEBPACK_IMPORTED_MODULE_2__["default"],
-    Title: _modules_title__WEBPACK_IMPORTED_MODULE_3__["default"]
+    Title: _modules_title__WEBPACK_IMPORTED_MODULE_3__["default"],
+    Profile: _modules_profile__WEBPACK_IMPORTED_MODULE_4__["default"]
   }
 }));
+
+/***/ }),
+
+/***/ "./resources/js/store/modules/profile.js":
+/*!***********************************************!*\
+  !*** ./resources/js/store/modules/profile.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var state = {
+  user: null,
+  userStatus: null
+};
+var getters = {
+  user: function user(state) {
+    return state.user;
+  }
+};
+var actions = {
+  fetchUser: function fetchUser(_ref, userId) {
+    var commit = _ref.commit,
+        state = _ref.state;
+    commit('setUserStatus', 'loading');
+    axios.get('/api/users/' + userId).then(function (res) {
+      commit('setUser', res.data);
+      commit('setUserStatus', 'success');
+    })["catch"](function (error) {
+      commit('setUserStatus', 'error');
+    });
+  }
+};
+var mutations = {
+  setUser: function setUser(state, user) {
+    state.user = user;
+  },
+  setUserStatus: function setUserStatus(state, status) {
+    state.userStatus = status;
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  state: state,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
 
 /***/ }),
 

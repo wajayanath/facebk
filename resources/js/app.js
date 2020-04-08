@@ -13,7 +13,6 @@ const app = new Vue({
     },
 
     router,
-
     store,
 
 });
