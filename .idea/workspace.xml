@@ -3,24 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="67a7f187-8bd1-438b-8422-1e2d44fd13ec" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Friend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Friend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FriendRequestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FriendRequestController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Resources/Friend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Friend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_28_120400_create_friends_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_28_120400_create_friends_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store/modules/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/modules/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/views/Users/Show.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/views/Users/Show.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/FriendTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/FriendTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/RetrievePostsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/RetrievePostsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/UserCanViewProfileTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/UserCanViewProfileTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +25,8 @@
       <file leaf-file-name="Show.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/views/Users/Show.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-              <folding>
-                <element signature="e#1277#1318#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="416">
+              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -49,8 +34,20 @@
       <file leaf-file-name="profile.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/store/modules/profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="297">
+              <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/components/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+              <folding>
+                <element signature="e#359#383#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,22 +108,22 @@
         <option value="$PROJECT_DIR$/app/Http/Resources/User.php" />
         <option value="$PROJECT_DIR$/tests/Feature/PostToTimelineTest.php" />
         <option value="$PROJECT_DIR$/app/Friend.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Friend.php" />
         <option value="$PROJECT_DIR$/tests/Feature/UserCanViewProfileTest.php" />
         <option value="$PROJECT_DIR$/database/factories/PostFactory.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PostController.php" />
         <option value="$PROJECT_DIR$/app/Scopes/ReverseScope.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Post.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/FriendTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FriendRequestResponseController.php" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/App.vue" />
         <option value="$PROJECT_DIR$/resources/js/store/index.js" />
         <option value="$PROJECT_DIR$/resources/js/store/modules/user.js" />
         <option value="$PROJECT_DIR$/app/Http/Resources/PostCollection.php" />
         <option value="$PROJECT_DIR$/app/Post.php" />
         <option value="$PROJECT_DIR$/tests/Feature/RetrievePostsTest.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/FriendTest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Friend.php" />
         <option value="$PROJECT_DIR$/resources/js/views/Users/Show.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/App.vue" />
         <option value="$PROJECT_DIR$/resources/js/store/modules/profile.js" />
       </list>
     </option>
@@ -254,8 +251,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1554" />
-    <option name="y" value="-60" />
+    <option name="x" value="1459" />
+    <option name="y" value="-46" />
     <option name="width" value="1280" />
     <option name="height" value="738" />
   </component>
@@ -417,14 +414,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="create&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2019_12_22_065101_create_posts_table.php&#10;setUser&#9;null&#9;null&#10;post&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Resources/Post.php&#10;Illuminate\Database\Eloquent\Builder&#9;null&#9;null&#10;api&#9;FILE&#9;file://E:/xampp/htdocs/facebk/routes/api.php&#10;a_user_can_retreive_posts&#9;null&#9;null&#10;friend&#9;null&#9;null&#10;U&#9;null&#9;null&#10;user&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Resources/User.php&#10;cre&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2020_03_28_120400_create_friends_table.php&#10;Frie&#9;null&#9;null&#10;fr&#9;null&#9;null&#10;authu&#9;null&#9;null&#10;userca&#9;null&#9;null&#10;createposts&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2019_12_22_065101_create_posts_table.php&#10;resources/post&#9;null&#9;null&#10;/home&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/views/home.blade.php&#10;postfa&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/factories/PostFactory.php&#10;phpu&#9;FILE&#9;file://E:/xampp/htdocs/facebk/phpunit.xml&#10;postco&#9;null&#9;null&#10;postto&#9;null&#9;null&#10;app.bla&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/views/layouts/app.blade.php&#10;kern&#9;null&#9;null&#10;auth&#9;FILE&#9;file://E:/xampp/htdocs/facebk/config/auth.php&#10;web.&#9;FILE&#9;file://E:/xampp/htdocs/facebk/routes/web.php&#10;appContr&#9;null&#9;null&#10;Auth&#9;null&#9;null&#10;appserv&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="profi&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/js/store/modules/profile.js&#10;Friend&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Resources/Friend.php&#10;create&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2019_12_22_065101_create_posts_table.php&#10;setUser&#9;null&#9;null&#10;post&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Resources/Post.php&#10;Illuminate\Database\Eloquent\Builder&#9;null&#9;null&#10;api&#9;FILE&#9;file://E:/xampp/htdocs/facebk/routes/api.php&#10;a_user_can_retreive_posts&#9;null&#9;null&#10;friend&#9;null&#9;null&#10;U&#9;null&#9;null&#10;user&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Resources/User.php&#10;cre&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2020_03_28_120400_create_friends_table.php&#10;Frie&#9;null&#9;null&#10;fr&#9;null&#9;null&#10;authu&#9;null&#9;null&#10;userca&#9;null&#9;null&#10;createposts&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2019_12_22_065101_create_posts_table.php&#10;resources/post&#9;null&#9;null&#10;/home&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/views/home.blade.php&#10;postfa&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/factories/PostFactory.php&#10;phpu&#9;FILE&#9;file://E:/xampp/htdocs/facebk/phpunit.xml&#10;postco&#9;null&#9;null&#10;postto&#9;null&#9;null&#10;app.bla&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/views/layouts/app.blade.php&#10;kern&#9;null&#9;null&#10;auth&#9;FILE&#9;file://E:/xampp/htdocs/facebk/config/auth.php&#10;web.&#9;FILE&#9;file://E:/xampp/htdocs/facebk/routes/web.php&#10;appContr&#9;null&#9;null&#10;Auth&#9;null&#9;null&#10;appserv&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -523,12 +520,15 @@
       <workItem from="1586065124917" duration="8960000" />
       <workItem from="1586149109548" duration="8697000" />
       <workItem from="1586237250158" duration="5778000" />
-      <workItem from="1586322211924" duration="10029000" />
+      <workItem from="1586322211924" duration="11881000" />
+      <workItem from="1586411074302" duration="4869000" />
+      <workItem from="1586496514842" duration="4335000" />
+      <workItem from="1586535407017" duration="3742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238725000" />
+    <option name="totallyTimeSpent" value="253523000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,8 +549,8 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="1" sideWeight="0.33200794" side_tool="true" weight="0.25970873" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49838188" visible="true" weight="0.12541254" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66799206" visible="true" weight="0.23624596" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49838188" visible="true" weight="0.3069307" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.66799206" visible="true" weight="0.24514563" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
@@ -570,21 +570,21 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="1" sideWeight="0.33200794" side_tool="true" weight="0.25970873" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66799206" visible="true" weight="0.23624596" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32893288" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49838188" visible="true" weight="0.37843785" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50161815" side_tool="true" weight="0.49174917" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="8" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
@@ -728,13 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Friend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserPostController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -794,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/FriendTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1215">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -819,13 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -878,10 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-            <element signature="e#117#158#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -924,9 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -937,20 +909,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Friend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/FriendTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/views/Users/Show.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        <state relative-caret-position="416">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding>
-            <element signature="e#1277#1318#0" expanded="true" />
+            <element signature="e#359#383#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/store/modules/profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="297">
+          <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
         </state>
       </provider>
     </entry>
