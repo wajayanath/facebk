@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center" v-if="status.user === 'success' && user">
         <dev class="relative mb-8">
             <div class="w-100 h-64 overflow-hidden z-10">
                 <img src="https://previews.123rf.com/images/solerf/solerf1311/solerf131100130/23650708-green-planet-in-your-heart-hands-usa-environment-concept.jpg" alt="" class="object-cover w-full">
@@ -29,9 +29,9 @@
             </div>
         </dev>
 
-        <p v-if="postloading">loading posts...</p>
+        <div v-if="status.posts === 'loading'">loading posts...</div>
+        <div v-else-if="posts.length<1">No posts found. Get started...</div>
         <Post v-else v-for="post in posts.data" :key="post.data.post_id" :post="post"/>
-        <p v-if=" ! postloading && posts.data.length < 1"></p>
 
     </div>
 </template>
@@ -47,32 +47,16 @@
             Post
         },
 
-        data:() => {
-            return {
-                posts:null,
-                postLoadiing:true,
-            }
-        },
         mounted() {
-
             this.$store.dispatch('fetchUser', this.$route.params.userId);
-
-            axios.get('/api/users/' + this.$route.params.userId + '/posts')
-                .then(res => {
-                    this.posts = res.data;
-                })
-                .catch(error => {
-                    console.log('unable to fetch posts');
-
-                })
-                .finally(() => {
-                    this.postLoading = false;
-                });
+            this.$store.dispatch('fetchUserPosts', this.$route.params.userId);
         },
 
         computed: {
             ...mapGetters({
                 user: 'user',
+                posts: 'posts',
+                status: 'status',
                 friendButtonText: 'friendButtonText',
             })
         }
