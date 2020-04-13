@@ -2,7 +2,7 @@
     <div class="flex flex-col items-center" v-if="status.user === 'success' && user">
         <dev class="relative mb-8">
             <div class="w-100 h-64 overflow-hidden z-10">
-                <img src="https://previews.123rf.com/images/solerf/solerf1311/solerf131100130/23650708-green-planet-in-your-heart-hands-usa-environment-concept.jpg" alt="" class="object-cover w-full">
+                <img src="https://i.pinimg.com/originals/ae/b4/40/aeb440b2d44f0d12315a14ec2316997d.jpg" alt="" class="object-cover w-full">
             </div>
             <div class="absolute flex items-center buttom-0 left-0 -mb-8 ml-12 z-20">
                 <div class="w-32">
