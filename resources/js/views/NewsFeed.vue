@@ -2,7 +2,7 @@
     <div class="flex flex-col items-center py-4">
         <NewPost />
 
-        <p v-if="newsStatus.postsStatus === 'loading'">loading">loading posts...</p>
+        <p v-if="newsStatus.postsStatus === 'loading'">loading posts...</p>
         <Post v-else v-for="(post, postKey) in posts.data" :key="postKey" :post="post"/>
     </div>
 </template>
@@ -25,7 +25,7 @@
 
         computed: {
             ...mapGetters({
-                posts: 'newsPosts',
+                posts: 'posts',
                 newsStatus: 'newsStatus',
             })
         }
