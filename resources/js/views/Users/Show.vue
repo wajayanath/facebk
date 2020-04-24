@@ -2,7 +2,10 @@
     <div class="flex flex-col items-center" v-if="status.user === 'success' && user">
         <dev class="relative mb-8">
             <div class="w-100 h-64 overflow-hidden z-10">
-                <img src="https://i.pinimg.com/originals/ae/b4/40/aeb440b2d44f0d12315a14ec2316997d.jpg" alt="" class="object-cover w-full">
+                <UploadableImage image-width="1500"
+                                 image-height="300"
+                                 location="cover" />
+                <!--:user-image="user.data.attributes.cover_image" />-->
             </div>
             <div class="absolute flex items-center buttom-0 left-0 -mb-8 ml-12 z-20">
                 <div class="w-32">
@@ -38,13 +41,15 @@
 
 <script>
     import Post from '../../components/Post';
+    import UploadableImage from "../../components/Uploadableimage";
     import { mapGetters } from 'vuex';
 
     export default {
         name: "Show",
 
         components: {
-            Post
+            Post,
+            UploadableImage,
         },
 
         mounted() {
