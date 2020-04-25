@@ -1,10 +1,9 @@
 <template>
     <div>
-        <img src="https://i.pinimg.com/originals/ae/b4/40/aeb440b2d44f0d12315a14ec2316997d.jpg"
-             alt="user background image"
+        <img :alt="alt"
              ref="userImage"
-             class="object-cover w-full">
-        <!--<img :src="imageObject.data.attributes.path"-->
+             :class="classes"
+             :src="imageObject.data.attributes.path">
 
     </div>
 </template>
@@ -16,24 +15,25 @@
         name: "UploadableImage",
 
         props: [
-          // 'userImage',
+          'userImage',
           'imageWidth',
           'imageHeight',
           'location',
-
+          'classes',
+          'alt',
         ],
-        //
+
         data:() => {
             return {
                 dropzone: null,
-                // uploadedImage: null,
+                uploadedImage: null,
             }
         },
 
         mounted() {
             this.dropzone = new Dropzone(this.$refs.userImage, this.settings);
         },
-        //
+
         computed: {
             settings() {
                 return {
@@ -49,14 +49,13 @@
                         'X-CSRF-TOKEN': document.head.querySelector('meta[name=csrf-token]').content,
                     },
                     success: (e, res) => {
-                       // this.uploadedImage = res;
-                        alert('uploaded');
+                       this.uploadedImage = res;
                     }
                 };
             },
-        //     imageObject() {
-        //         return this.uploadedImage || this.userImage;
-        //     }
+            imageObject() {
+                return this.uploadedImage || this.userImage;
+            }
         }
     }
 </script>

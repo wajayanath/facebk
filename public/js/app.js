@@ -2145,25 +2145,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "UploadableImage",
-  props: [// 'userImage',
-  'imageWidth', 'imageHeight', 'location'],
-  //
+  props: ['userImage', 'imageWidth', 'imageHeight', 'location', 'classes', 'alt'],
   data: function data() {
     return {
-      dropzone: null // uploadedImage: null,
-
+      dropzone: null,
+      uploadedImage: null
     };
   },
   mounted: function mounted() {
     this.dropzone = new dropzone__WEBPACK_IMPORTED_MODULE_0___default.a(this.$refs.userImage, this.settings);
   },
-  //
   computed: {
     settings: function settings() {
+      var _this = this;
+
       return {
         paramName: 'image',
         url: '/api/user-images',
@@ -2177,14 +2175,13 @@ __webpack_require__.r(__webpack_exports__);
           'X-CSRF-TOKEN': document.head.querySelector('meta[name=csrf-token]').content
         },
         success: function success(e, res) {
-          // this.uploadedImage = res;
-          alert('uploaded');
+          _this.uploadedImage = res;
         }
       };
-    } //     imageObject() {
-    //         return this.uploadedImage || this.userImage;
-    //     }
-
+    },
+    imageObject: function imageObject() {
+      return this.uploadedImage || this.userImage;
+    }
   }
 });
 
@@ -2274,6 +2271,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -25183,12 +25187,8 @@ var render = function() {
   return _c("div", [
     _c("img", {
       ref: "userImage",
-      staticClass: "object-cover w-full",
-      attrs: {
-        src:
-          "https://i.pinimg.com/originals/ae/b4/40/aeb440b2d44f0d12315a14ec2316997d.jpg",
-        alt: "user background image"
-      }
+      class: _vm.classes,
+      attrs: { alt: _vm.alt, src: _vm.imageObject.data.attributes.path }
     })
   ])
 }
@@ -25289,7 +25289,10 @@ var render = function() {
                   attrs: {
                     "image-width": "1500",
                     "image-height": "300",
-                    location: "cover"
+                    location: "cover",
+                    alt: "user background image",
+                    classes: "object-cover w-full",
+                    "user-image": _vm.user.data.attributes.cover_image
                   }
                 })
               ],
@@ -25303,17 +25306,24 @@ var render = function() {
                   "absolute flex items-center buttom-0 left-0 -mb-8 ml-12 z-20"
               },
               [
-                _c("div", { staticClass: "w-32" }, [
-                  _c("img", {
-                    staticClass:
-                      "w-32 h-32 border-4 border-gray-200 object-cover rounded-full shadow-lg",
-                    attrs: {
-                      src:
-                        "https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_960_720.jpg",
-                      alt: "profile image for user"
-                    }
-                  })
-                ]),
+                _c(
+                  "div",
+                  { staticClass: "w-32" },
+                  [
+                    _c("UploadableImage", {
+                      attrs: {
+                        "image-width": "1500",
+                        "image-height": "300",
+                        location: "profile",
+                        alt: "profile image for user",
+                        classes:
+                          "w-32 h-32 border-4 border-gray-200 object-cover rounded-full shadow-lg",
+                        "user-image": _vm.user.data.attributes.profile_image
+                      }
+                    })
+                  ],
+                  1
+                ),
                 _vm._v(" "),
                 _c("p", { staticClass: "text-2xl text-gray-100 ml-4 " }, [
                   _vm._v(_vm._s(_vm.user.data.attributes.name))
