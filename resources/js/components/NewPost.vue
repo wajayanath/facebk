@@ -96,7 +96,7 @@
                     sending: (file, xhr, formData) => {
                         formData.append('body', this.$store.getters.postMessage);
                     },
-                    sucess: (event, res) => {
+                    success: (event, res) => {
                         this.dropzone.removeAllFiles();
 
                         this.$store.commit('pushPost', res);

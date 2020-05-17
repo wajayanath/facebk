@@ -25393,7 +25393,7 @@ var render = function() {
           _c("dev", { staticClass: "relative mb-8" }, [
             _c(
               "div",
-              { staticClass: "w-100 h-64 overflow-hidden z-10" },
+              { staticClass: "w-100 h-64 -mb-12 overflow-hidden z-10" },
               [
                 _c("UploadableImage", {
                   attrs: {
@@ -25435,7 +25435,7 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
-                _c("p", { staticClass: "text-2xl text-gray-100 ml-4 " }, [
+                _c("p", { staticClass: "text-2xl text-gray-500 ml-4 " }, [
                   _vm._v(_vm._s(_vm.user.data.attributes.name))
                 ])
               ]

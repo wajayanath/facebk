@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="67a7f187-8bd1-438b-8422-1e2d44fd13ec" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/NewPost.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/NewPost.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Post.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Post.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/modules/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/modules/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/views/Users/Show.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/views/Users/Show.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/PostToTimelineTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/PostToTimelineTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Post.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Post.vue">
+      <file leaf-file-name="FriendTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/FriendTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="243">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -52,7 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Exceptions/UserNotFoundException.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/FriendRequestNotFoundException.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/ValidationErrorException.php" />
@@ -82,7 +80,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/PostCommentController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/PostCommentsTest.php" />
         <option value="$PROJECT_DIR$/resources/js/store/modules/profile.js" />
-        <option value="$PROJECT_DIR$/resources/js/views/NewsFeed.vue" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/UserImage.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_04_19_064636_create_user_images_table.php" />
@@ -94,15 +91,17 @@
         <option value="$PROJECT_DIR$/app/Http/Resources/UserImage.php" />
         <option value="$PROJECT_DIR$/tests/Feature/UserImagesTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserImageController.php" />
-        <option value="$PROJECT_DIR$/resources/js/views/Users/Show.vue" />
-        <option value="$PROJECT_DIR$/tests/Feature/PostToTimelineTest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Post.php" />
         <option value="$PROJECT_DIR$/tests/Feature/UserCanViewProfileTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/RetrievePostsTest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PostController.php" />
         <option value="$PROJECT_DIR$/resources/js/components/Post.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/NewPost.vue" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PostController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Post.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/PostToTimelineTest.php" />
         <option value="$PROJECT_DIR$/resources/js/store/modules/posts.js" />
+        <option value="$PROJECT_DIR$/resources/js/views/NewsFeed.vue" />
+        <option value="$PROJECT_DIR$/resources/js/views/Users/Show.vue" />
       </list>
     </option>
   </component>
@@ -230,10 +229,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1465" />
-    <option name="y" value="-88" />
-    <option name="width" value="1278" />
-    <option name="height" value="738" />
+    <option name="x" value="1358" />
+    <option name="y" value="-264" />
+    <option name="width" value="1296" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -243,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,7 +273,25 @@
               <item name="facebk" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="facebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="facebk" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="facebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="facebk" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="facebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="facebk" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="facebk" type="b2602c69:ProjectViewProjectNode" />
@@ -297,24 +315,6 @@
               <item name="facebk" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
               <item name="seeds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="facebk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="facebk" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="facebk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="facebk" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="facebk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="facebk" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="user-images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="facebk" type="b2602c69:ProjectViewProjectNode" />
@@ -367,6 +367,19 @@
             <path>
               <item name="facebk" type="b2602c69:ProjectViewProjectNode" />
               <item name="facebk" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="facebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="facebk" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="facebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="facebk" type="462c0819:PsiDirectoryNode" />
               <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -402,11 +415,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="postCon&#9;null&#9;null&#10;user&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/User.php&#10;createuse&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2020_04_19_064636_create_user_images_table.php&#10;user.p&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/User.php&#10;api&#9;FILE&#9;file://E:/xampp/htdocs/facebk/routes/api.php&#10;post.js&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/js/store/modules/posts.js&#10;create_comme&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2020_04_16_072102_create_comments_table.php&#10;comment&#9;null&#9;null&#10;postComme&#9;null&#9;null&#10;like&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Resources/LikeCollection.php&#10;post&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Resources/Post.php&#10;create_like&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2020_04_15_071432_create_likes_table.php&#10;postli&#9;null&#9;null&#10;bootstrap&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/js/bootstrap.js&#10;app.&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/js/app.js&#10;new&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/js/components/NewPost.vue&#10;fr&#9;null&#9;null&#10;retr&#9;FILE&#9;file://E:/xampp/htdocs/facebk/tests/Feature/RetrievePostsTest.php&#10;friend&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Controllers/FriendRequestController.php&#10;profi&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/js/store/modules/profile.js&#10;Friend&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Resources/Friend.php&#10;create&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2019_12_22_065101_create_posts_table.php&#10;setUser&#9;null&#9;null&#10;Illuminate\Database\Eloquent\Builder&#9;null&#9;null&#10;a_user_can_retreive_posts&#9;null&#9;null&#10;U&#9;null&#9;null&#10;cre&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2020_03_28_120400_create_friends_table.php&#10;Frie&#9;null&#9;null&#10;authu&#9;null&#9;null&#10;userca&#9;null&#9;null&#10;createposts&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2019_12_22_065101_create_posts_table.php&#10;resources/post&#9;null&#9;null&#10;/home&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/views/home.blade.php&#10;postfa&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/factories/PostFactory.php&#10;phpu&#9;FILE&#9;file://E:/xampp/htdocs/facebk/phpunit.xml&#10;postco&#9;null&#9;null&#10;postto&#9;null&#9;null&#10;app.bla&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/views/layouts/app.blade.php&#10;kern&#9;null&#9;null&#10;auth&#9;FILE&#9;file://E:/xampp/htdocs/facebk/config/auth.php&#10;web.&#9;FILE&#9;file://E:/xampp/htdocs/facebk/routes/web.php&#10;appContr&#9;null&#9;null&#10;Auth&#9;null&#9;null&#10;appserv&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="postf&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/factories/PostFactory.php&#10;post&#9;null&#9;null&#10;web&#9;FILE&#9;file://E:/xampp/htdocs/facebk/routes/web.php&#10;authser&#9;null&#9;null&#10;user.php&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/User.php&#10;postCon&#9;null&#9;null&#10;user&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/User.php&#10;createuse&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2020_04_19_064636_create_user_images_table.php&#10;user.p&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/User.php&#10;api&#9;FILE&#9;file://E:/xampp/htdocs/facebk/routes/api.php&#10;post.js&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/js/store/modules/posts.js&#10;create_comme&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2020_04_16_072102_create_comments_table.php&#10;comment&#9;null&#9;null&#10;postComme&#9;null&#9;null&#10;like&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Resources/LikeCollection.php&#10;create_like&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2020_04_15_071432_create_likes_table.php&#10;postli&#9;null&#9;null&#10;bootstrap&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/js/bootstrap.js&#10;app.&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/js/app.js&#10;new&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/js/components/NewPost.vue&#10;fr&#9;null&#9;null&#10;retr&#9;FILE&#9;file://E:/xampp/htdocs/facebk/tests/Feature/RetrievePostsTest.php&#10;friend&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Controllers/FriendRequestController.php&#10;profi&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/js/store/modules/profile.js&#10;Friend&#9;FILE&#9;file://E:/xampp/htdocs/facebk/app/Http/Resources/Friend.php&#10;create&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2019_12_22_065101_create_posts_table.php&#10;setUser&#9;null&#9;null&#10;Illuminate\Database\Eloquent\Builder&#9;null&#9;null&#10;a_user_can_retreive_posts&#9;null&#9;null&#10;U&#9;null&#9;null&#10;cre&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2020_03_28_120400_create_friends_table.php&#10;Frie&#9;null&#9;null&#10;authu&#9;null&#9;null&#10;userca&#9;null&#9;null&#10;createposts&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/migrations/2019_12_22_065101_create_posts_table.php&#10;resources/post&#9;null&#9;null&#10;/home&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/views/home.blade.php&#10;postfa&#9;FILE&#9;file://E:/xampp/htdocs/facebk/database/factories/PostFactory.php&#10;phpu&#9;FILE&#9;file://E:/xampp/htdocs/facebk/phpunit.xml&#10;postco&#9;null&#9;null&#10;postto&#9;null&#9;null&#10;app.bla&#9;FILE&#9;file://E:/xampp/htdocs/facebk/resources/views/layouts/app.blade.php&#10;kern&#9;null&#9;null&#10;auth&#9;FILE&#9;file://E:/xampp/htdocs/facebk/config/auth.php&#10;web.&#9;FILE&#9;file://E:/xampp/htdocs/facebk/routes/web.php&#10;appContr&#9;null&#9;null&#10;Auth&#9;null&#9;null&#10;appserv&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -535,12 +547,25 @@
       <workItem from="1587881580247" duration="7396000" />
       <workItem from="1587960606340" duration="11587000" />
       <workItem from="1588054680925" duration="11974000" />
-      <workItem from="1588140039328" duration="3771000" />
+      <workItem from="1588140039328" duration="4532000" />
+      <workItem from="1588246202913" duration="333000" />
+      <workItem from="1588310566611" duration="4078000" />
+      <workItem from="1588395150956" duration="4387000" />
+      <workItem from="1588436971501" duration="3734000" />
+      <workItem from="1588482791937" duration="5654000" />
+      <workItem from="1588570339610" duration="6841000" />
+      <workItem from="1588654427418" duration="2587000" />
+      <workItem from="1588829387548" duration="1908000" />
+      <workItem from="1588917156837" duration="647000" />
+      <workItem from="1589349418580" duration="3015000" />
+      <workItem from="1589517364958" duration="1221000" />
+      <workItem from="1589607398849" duration="1772000" />
+      <workItem from="1589694567551" duration="712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="420602000" />
+    <option name="totallyTimeSpent" value="458252000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -553,7 +578,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-264" width="1296" height="1040" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32893288" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50161815" side_tool="true" weight="0.49174917" />
@@ -561,8 +585,8 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="1" sideWeight="0.33200794" side_tool="true" weight="0.25970873" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49838188" visible="true" weight="0.37733772" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66799206" weight="0.24757281" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49838188" weight="0.33883387" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.66799206" visible="true" weight="0.21440129" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
@@ -582,21 +606,21 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="1" sideWeight="0.33200794" side_tool="true" weight="0.25970873" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.66799206" visible="true" weight="0.27831715" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32893288" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49838188" visible="true" weight="0.34433442" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50161815" side_tool="true" weight="0.49174917" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="8" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
@@ -615,109 +639,16 @@
           <line>4</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/User.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/Feature/PostCommentsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3429">
-          <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/ExampleTest.php" />
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/GetAuthUserTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/UserImage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/user-images/voT7z3M6C0CTfBeoCCAA66yPcvqyW9TkUF4dTBY5.jpeg" />
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/user-images/ExuGaeVldU5I7XSzIeAhJGGvojVMUeikg2r5kEct.jpeg" />
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/user-images/1ciB3Q5G4EXv2xcj0TJMHifbrD3FjTMvQ5R0UjYP.jpeg" />
-    <entry file="file://$PROJECT_DIR$/public/storage/user-images/1ciB3Q5G4EXv2xcj0TJMHifbrD3FjTMvQ5R0UjYP.jpeg" />
-    <entry file="file://$PROJECT_DIR$/public/storage/user-images/Ek5XKeaZLTi9HgYhGuKdW7XrRpFOlYioiDa075Bz.jpeg" />
-    <entry file="file://$PROJECT_DIR$/storage/app/public/user-images/r7FG4XhSlT9Y5mTRQH9S5fUUuDJ4mFp5JvTOZi1D.jpeg" />
-    <entry file="file://$PROJECT_DIR$/storage/app/public/user-images/cover-default-image.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/user-images/profile-default-image.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Nav.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="843" column="13" selection-start-line="843" selection-start-column="13" selection-end-line="843" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Resources/LikeCollection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -753,59 +684,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/public/user-images/e2i1V8zjsPtF67Yj0UQdxBsCg6frNYIPCCb0Cg6T.jpeg" />
     <entry file="file://$PROJECT_DIR$/storage/app/public/user-images/8VaECEm1K6yS4KhMvq1bqGIaqwZaPwXoe77LB0yX.jpeg" />
-    <entry file="file://$PROJECT_DIR$/resources/js/views/Users/Show.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/RetrievePostsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/UserCanViewProfileTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="56" column="59" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_19_064636_create_user_images_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/PostToTimelineTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="76" column="32" lean-forward="true" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/views/NewsFeed.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Uploadableimage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
@@ -824,60 +706,228 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserImageController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <element signature="e#40#94#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/store/modules/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="79" column="26" lean-forward="true" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/store/modules/posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="87" column="39" lean-forward="true" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/NewPost.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#2207#2230#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Post.vue">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/passport/src/HasApiTokens.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1377">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1591" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1539" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2268" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-268">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/views/Start.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/PostCommentsTest.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/PostToTimelineTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-987">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#33#46#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/PostFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/RetrievePostsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/UserCanViewProfileTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/GetAuthUserTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/store/modules/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Nav.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/store/modules/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2133">
+          <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/views/NewsFeed.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Uploadableimage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="52" column="22" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/views/Users/Show.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Sidebar.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/store/modules/posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/FriendTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
